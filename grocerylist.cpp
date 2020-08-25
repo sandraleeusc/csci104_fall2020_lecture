@@ -34,7 +34,7 @@ GroceryList::GroceryList(size_t n){
     list = make_unique<string []>(n);
 }
 GroceryList::~GroceryList(){
-    cout <<"destroying list" <<endl;
+    //cout <<"destroying list" <<endl;
 }
 
 bool GroceryList::empty() const {
