@@ -42,7 +42,7 @@ bool GroceryList::empty() const {
 }
 
 size_t GroceryList::size() const {
-    return list_size;
+    return num_items;
 }
 
 void GroceryList::printList() const {
