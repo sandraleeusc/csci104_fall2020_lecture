@@ -11,10 +11,10 @@ using namespace std;
 int main(){
 
     // Change this for whatever queue you are testing
-    list_IntQueue test_queue;
-    vector_IntQueue vt_queue;
+    ListIntQueue test_queue;
+    VectorIntQueue vt_queue;
 //    AbstractIntQueue &q = vt_queue;
-    AbstractIntQueue &q = test_queue;
+    IntQueue &q = test_queue;
 
 
 

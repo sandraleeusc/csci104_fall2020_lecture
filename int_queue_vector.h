@@ -1,7 +1,7 @@
 #ifndef VECTOR_INT_QUEUE_H
 #define VECTOR_INT_QUEUE_H
 
-#include "queue.h"
+#include "int_queue.h"
 #include <vector>
 #include <stdexcept>
 
@@ -26,7 +26,7 @@ public:
         return queue.size();
     }
 
-    void push_back(int value) {
+    void push_back(int v) {
         queue.push_back(v);
     }
 
