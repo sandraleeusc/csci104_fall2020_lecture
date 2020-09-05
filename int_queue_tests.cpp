@@ -1,8 +1,9 @@
-#include "queue.h"
-#include "listqueue.h"
-#include "vectorqueue.h"
+#include "int_queue.h"
+#include "int_queue_list.h"
+#include "int_queue_vector.h"
 #include <iostream>
 #include <chrono>
+
 
 using namespace std;
 
