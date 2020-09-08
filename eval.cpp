@@ -11,6 +11,9 @@ using namespace std;
 
 double evaluate(string expr){
     stringstream s(expr);
+    string current_token;
+    stack<string> ops;
+    stack<double> vals;
 // this is not correct. fix here
    return 0;
 }
