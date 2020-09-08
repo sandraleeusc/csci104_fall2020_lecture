@@ -13,7 +13,7 @@ int main(){
     // Change this for whatever queue you are testing
     ListIntQueue test_queue;
     VectorIntQueue vt_queue;
-//    AbstractIntQueue &q = vt_queue;
+//  IntQueue &q = vt_queue;
     IntQueue &q = test_queue;
 
 
