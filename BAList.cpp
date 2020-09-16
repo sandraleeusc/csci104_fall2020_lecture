@@ -15,6 +15,7 @@ public:
   void remove(int pos);
   // Extra exercises
   //int const & get(int loc) const;
+  // Should have error checking or exceptions
   int& get(int loc) { return data_[loc];}
   //void set(int loc, const int& val);
   void push_back(const T& val);
@@ -29,6 +30,7 @@ public:
 
 int main()
 {
+  // You can add exception handling
     BAList<int> test(20);
     for (int i = 0; i < 10; i++)
     test.push_back(i);
