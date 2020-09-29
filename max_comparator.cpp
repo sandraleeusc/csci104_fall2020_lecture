@@ -13,12 +13,12 @@ template <typename T, typename comp>
 }
    
    
- // Write a comparator to compare the size of 2 vectors of ints and return the larger sized
- // vector
+ // Write a comparator to compare the size of 2 vectors of ints and return true if 
+//  and only if the first parameter is the larger sized vector 
  
  
  // Write a comparator to compare the sum of two vectors of  ints and return
- // the vector with the larger sum
+ // true if and only if the first parameter  vector has the larger sum
  
  
 
