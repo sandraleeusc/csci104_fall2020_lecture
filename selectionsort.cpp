@@ -4,46 +4,11 @@
 using namespace std;
 
 shared_ptr<Item> findMin(shared_ptr<Item>& head){
-    if(head == nullptr) return nullptr;
-    shared_ptr<Item> tmp =  head;
-    shared_ptr<Item> min = head; 
-    int v = tmp->getValue();
-    while(tmp != nullptr){
-        if(tmp->getValue() < v) {
-            v = tmp->getValue();
-            min = tmp;
-        } 
-        tmp = tmp->next;
-    } 
-
-    if (min == head) {
-        head = head->next;
-        head->prev = nullptr;
-    } else if (min->next == nullptr){
-	if (min->prev != nullptr){
-         min->prev->next = nullptr;
-       }
-   } else {
-      min->prev->next = min->next;
-      min->next->prev = min->prev;
-   }
-
-    min->next = nullptr;
-    min->prev = nullptr;
-    return min;
+   
 } 
 
 shared_ptr<Item> LLSelectionSort(shared_ptr<Item> head){
-    if(head == nullptr || head->next == nullptr) 
-        return head;
-
-    
-    shared_ptr<Item> min = findMin(head);
-
-    min->next = LLSelectionSort(head);
-    if (head != nullptr) head->prev = min;
-    
-    return min;
+   
 } 
 
 int main(){
@@ -69,5 +34,7 @@ int main(){
       cout << "Current value " << temp->getValue() << endl;
       temp = temp->next;
   }
+	
+  // This code has memory leaks. Why? How to fix?
 
 }
