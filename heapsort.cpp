@@ -8,7 +8,7 @@ int main ()
   
 
   
-  // how to get a random integer between 0 and 1000
+  // how to get a random integer between 0 and 999
       int k = rand()%1000;
     
   
