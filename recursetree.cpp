@@ -42,7 +42,7 @@ struct Item {
        return 0;
    }
 
-
+// Provided for you
  template <typename T>
  void BinTree<T>::add(const T& v) {        
         if (root == nullptr){            
