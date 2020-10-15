@@ -15,7 +15,7 @@ public:
 /* There is no default constructor. Once the graph is created with n nodes,
 no nodes will be added or deleted. */
 DirectedGraph(int n); // constructor
-~DirectedGraph () = default; // destructor
+~DirectedGraph (); // destructor
 
 void addEdge(int start, int end, int weight);
 /* adds a directed edge from start to end in the graph and runs in O(1)
