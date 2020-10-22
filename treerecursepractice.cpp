@@ -40,7 +40,8 @@ struct Node {
        l->left = ll;
        l->right = lr;
         
-       print_preorder(head);    
+       print_preorder(head); 
+       cout << endl;
        prefix(head);
        print_preorder(head);
        // no need to worry about memory leaks right now
