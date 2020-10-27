@@ -14,10 +14,14 @@ struct Node {
   
 shared_ptr<Node> find(shared_ptr<Node> root, int value); 
 
- 
+void findInRange(shared_ptr<Node> root, int k1, int k2);
+
+
  // Write a recursive function to print the binary tree in 
  // preorder traversal order
  void print_preorder(shared_ptr<Node> root);
+
+
  
  
    
